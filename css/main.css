@@ -22,18 +22,24 @@ body {
 
 @media only screen and (min-width: 25em) {
 
-  display: block;
+  html {
+    display: inline-block;
+  }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  display: inline-block;
+  html {
+    display: inline-block;
+  }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  display: inline-block;
+  html {
+    display: inline-block;
+  }
 
 }
