@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+
   @-moz-viewport { width: device-width; scale: 1; }
   @-ms-viewport { width: device-width; scale: 1; }
   @-o-viewport { width: device-width; scale: 1; }
@@ -11,45 +12,52 @@ html {
   box-sizing: inherit;
 }
 
-  img {
-    display: block;
-    width: 100%;
-  }
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+img:last-child {
+  display: none;
+}
+
+img:nth-child(2) {
+  display: none;
+}
 
 @media only screen and (min-width: 25em) {
 
   img {
-    display: block;
+    width: 49%;
+  }
+  img:last-child {
+    display: inline-block;
   }
 
+  img:nth-child(2) {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-width: 38em) {
 
-  body {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   img {
-    width: 50%;
+    width: 32%;
   }
-
+  img:first-child{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 60em) {
 
-  body {
-    display: flex;
-    flex-wrap: no-wrap;
-  }
-
   img {
-    width: 33%;
+    width: 24%;
   }
 
-  img:last-child {
-    display: none;
+  img:first-child {
+    display: inline-block;
   }
 
 }
