@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  @-moz-viewport { width: device-width; scale: 1; }
+  @-ms-viewport { width: device-width; scale: 1; }
+  @-o-viewport { width: device-width; scale: 1; }
+  @-webkit-viewport { width: device-width; scale: 1; }
+  @viewport { width: device-width; scale: 1; }
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: flex;
+}
+
+@media only screen and (min-width: 25em) {
+
+  display: block;
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  display: inline-block;
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  display: inline-block;
+
+}
